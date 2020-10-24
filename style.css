@@ -7,14 +7,8 @@
     --grey_color : #C3C9D5;
 }
 
-/*this mediaQuery will supress central header picture on little screens */ 
-@media all and (max-width: 800px)
-{
-    img.imagepresentation
-    {
-        width: 0%;
-    }
-}
+
+
 
 /* custom fonts */
 @font-face
@@ -23,6 +17,15 @@
     src: url('font/Andika-Regular.ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+/*this mediaQuery will supress central header picture on little screens */ 
+@media all and (max-device-width:1023px)
+{
+    img.imagepresentation
+    {
+        display:none;
+    }
 }
 
 .centrage_simple_inline
@@ -59,9 +62,9 @@ a.bouton_perso_basique{
 
     color:white;
     font-weight: bolder;
-    font-size: 1.1em;
+    font-size: 1.4em;
     text-decoration: none;
-
+    min-width: 150px;
     padding : 1em;
     padding-top: 0.1em;
     padding-bottom: 0.3em;
@@ -121,3 +124,4 @@ img.imagepresentation
 .footer_licence{
     border-top: 1px solid #585858;
 }
+

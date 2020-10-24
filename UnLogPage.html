@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
         <title>Hand eBook</title>
     </head>
 
@@ -49,7 +51,25 @@
             <p class="footer_licence">© 2020 Hand eBook et contributeurs individuels.</p>
         </footer>
 
-
-
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+        <script>
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#eaf7f7",
+              "text": "#5c7291"
+            },
+            "button": {
+              "background": "#56cbdb",
+              "text": "#ffffff"
+            }
+          },
+          "content": {
+            "message": "Hand eBook utilise des cookies pour vous proposer la meilleure expérience utilisateur possible. ",
+            "dismiss": "D'accord ! ",
+            "link": "En savoir plus."
+          }
+        });
+        </script>
     </body>
 </html>
