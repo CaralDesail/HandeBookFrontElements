@@ -7,6 +7,15 @@
     --grey_color : #C3C9D5;
 }
 
+/*this mediaQuery will supress central header picture on little screens */ 
+@media all and (max-width: 800px)
+{
+    img.imagepresentation
+    {
+        width: 0%;
+    }
+}
+
 /* custom fonts */
 @font-face
 {
