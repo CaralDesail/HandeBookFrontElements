@@ -32,7 +32,6 @@ header
     background-color: var(--main_color_teint2);
     padding : 0.5em;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -41,18 +40,23 @@ p
     text-align: justify;
 }
 
+a{
+    color: #f85f5d;
+}
+
 a.bouton_perso_basique{
     display: inline-block;
     background-color: #F46F6C;
 
     color:white;
     font-weight: bolder;
+    font-size: 1.1em;
     text-decoration: none;
 
     padding : 1em;
     padding-top: 0.1em;
     padding-bottom: 0.3em;
-    margin:1em;
+    margin:0.5em;
 
     border-radius: 20px 20px 20px 20px;
 
@@ -70,23 +74,30 @@ div.logo_header
     /*background-color: #C3C9D5;*/
     width:30%;
     max-width: 7em;
-    min-width: 50px;
+    min-width: 100px;
 }
 img.logo_img_header
 {
     width:100%;
     height:auto;
 }
+img.imagepresentation
+{
+    max-height: 12em;
+}
 
 #header_zone_centrale
 {
-    background-color: deeppink;
+    /*background-color: deeppink;*/
+    max-height: 7em;
 }
 #header_menu_droite
 {
     display: flex;
     justify-content: flex-end;
     width: 30%;
+    max-width: 7em;
+    min-width: 50px;
     /*background-color: #0E4B54;*/
 }
 
