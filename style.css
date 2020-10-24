@@ -1,0 +1,103 @@
+:root{
+    --main_color_teint1 : #F46F6C;
+    --main_color_teint2 : #FFBABA;
+    --main_color_teint3 :  #f85f5d;
+    --second_color_teint1 : #0E4B54;
+    --second_color_teint2 : #3B6B71;
+    --grey_color : #C3C9D5;
+}
+
+/* custom fonts */
+@font-face
+{
+    font-family: 'Andika';
+    src: url('font/Andika-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.centrage_simple_inline
+{
+    text-align: center;
+}
+
+body
+{
+    font-family: 'Andika',Verdana, Tahoma;
+    font-size: 1.3em;
+}
+
+header
+{
+    background-color: var(--main_color_teint2);
+    padding : 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p
+{
+    text-align: justify;
+}
+
+a.bouton_perso_basique{
+    display: inline-block;
+    background-color: #F46F6C;
+
+    color:white;
+    font-weight: bolder;
+    text-decoration: none;
+
+    padding : 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.3em;
+    margin:1em;
+
+    border-radius: 20px 20px 20px 20px;
+
+    white-space:nowrap;
+
+    box-shadow: 0px 0px 4px 4px rgba(119, 119, 119, 0.75);
+}
+a.bouton_perso_basique:hover{
+    background-color: var(--main_color_teint3);
+    box-shadow: 0px 0px 10px 10px rgba(80, 80, 80, 0.75);
+}
+
+div.logo_header
+{
+    /*background-color: #C3C9D5;*/
+    width:30%;
+    max-width: 7em;
+    min-width: 50px;
+}
+img.logo_img_header
+{
+    width:100%;
+    height:auto;
+}
+
+#header_zone_centrale
+{
+    background-color: deeppink;
+}
+#header_menu_droite
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    /*background-color: #0E4B54;*/
+}
+
+#section_contenu_central
+{
+    padding: 10%;
+    padding-top: 2em;
+}
+
+
+
+.footer_licence{
+    border-top: 1px solid #585858;
+}
